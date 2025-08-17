@@ -51,7 +51,7 @@ void Player::HandleInput(const Uint8* state) {
     if (state[SDL_SCANCODE_D]) {
         vx = speed;
     }
-
+//debug
     if (state[SDL_SCANCODE_F1]) {
 		std::cout << "Player position: (" << x << ", " << y << ")" << std::endl;
 		std::cout << "Player velocity: (" << vx << ", " << vy << ")" << std::endl;
@@ -127,4 +127,5 @@ bool Player::IsDead() const {
     return health <= 0;
     exit(0);
 }
+
 
